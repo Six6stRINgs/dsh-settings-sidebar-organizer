@@ -1,0 +1,77 @@
+{
+  "name": "@local/dsh-settings-sidebar-organizer",
+  "version": "0.1.0",
+  "private": true,
+  "description": "User-organized two-level settings navigation for DSH Desktop.",
+  "type": "module",
+  "main": "lib/index.js",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Six6stRINgs/dsh-settings-sidebar-organizer.git"
+  },
+  "homepage": "https://github.com/Six6stRINgs/dsh-settings-sidebar-organizer#readme",
+  "bugs": {
+    "url": "https://github.com/Six6stRINgs/dsh-settings-sidebar-organizer/issues"
+  },
+  "keywords": ["dsh", "deepseek-harness", "settings", "sidebar", "drag-and-drop", "cordis"],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/schemastery": "*"
+  },
+  "peerDependenciesMeta": {
+    "@deepseek-ai/schemastery": {
+      "optional": true
+    }
+  },
+  "engines": {
+    "dsh": "0.2.2-rc.1"
+  },
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "README_zh.md",
+    "assets/showcase.gif",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "node src/build.mjs",
+    "build:check": "node src/build.mjs --check",
+    "syntax": "node --check lib/index.js && node --check src/client.js && node --check lib/client.js",
+    "pretest": "node src/build.mjs",
+    "test": "node --test test/*.test.js",
+    "pack:check": "npm pack --dry-run --ignore-scripts",
+    "check": "npm run build:check && npm run syntax && npm test && npm run pack:check",
+    "prepack": "npm run build",
+    "prepublishOnly": "npm run check"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-settings-general"
+      ]
+    }
+  },
+  "devDependencies": {
+    "@deepseek-ai/dsh-client-ui-slots": "0.2.2-rc.1",
+    "react": "18.3.1",
+    "react-test-renderer": "18.3.1"
+  }
+}
