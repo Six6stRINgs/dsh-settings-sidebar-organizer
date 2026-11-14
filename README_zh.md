@@ -1,6 +1,19 @@
-# dsh-settings-sidebar-organizer
-
-[English](https://github.com/Six6stRINgs/dsh-settings-sidebar-organizer/blob/main/README.md) · **简体中文**
+<div align="center">
+  <img src="./icon.svg" width="88" height="88" alt="设置侧栏整理器标志" />
+  <h1>设置侧栏整理器</h1>
+  <p><a href="./README.md">English</a> · <strong>简体中文</strong></p>
+  <p>
+    <a href="https://github.com/awesome-dsh-plugin/awesome-dsh-plugin"><img src="https://awesome-dsh-plugin.com/badge.svg" alt="awesome · DSH plugin" /></a>
+    <a href="https://github.com/deepseek-ai/deepseek-harness"><img src="https://img.shields.io/badge/dsh-plugin-4B32C3" alt="dsh" /></a>
+    <a href="./LICENSE"><img src="https://img.shields.io/badge/license-MIT-green" alt="license" /></a>
+  </p>
+  <p>
+    <a href="https://www.npmjs.com/package/dsh-settings-sidebar-organizer"><img src="https://img.shields.io/npm/v/dsh-settings-sidebar-organizer?color=4a6cf7" alt="npm version" /></a>
+    <a href="https://www.npmjs.com/package/dsh-settings-sidebar-organizer"><img src="https://img.shields.io/npm/dt/dsh-settings-sidebar-organizer?color=4a6cf7" alt="npm downloads" /></a>
+    <a href="https://github.com/Six6stRINgs/dsh-settings-sidebar-organizer"><img src="https://img.shields.io/badge/repo-github-181717?logo=github" alt="repo" /></a>
+    <a href="https://github.com/Six6stRINgs/dsh-settings-sidebar-organizer/"><img src="https://img.shields.io/github/stars/Six6stRINgs/dsh-settings-sidebar-organizer?color=4a6cf7" alt="GitHub stars" /></a>
+  </p>
+</div>
 
 **用拖拽整理 DSH 设置侧栏。** 把常用页面放在前面，把相关入口收进自定义分组，并在下次使用时保留布局。
 
@@ -14,9 +27,25 @@
 
 ## 安装
 
-**已验证的 DSH 版本：`0.2.2-rc.1`。** 其他版本尚未验证。目前尚未发布到 npm，请使用下面任一种方式从 GitHub 安装。
+**已验证的 DSH 版本：`0.2.2-rc.1`。** 其他版本尚未验证。
 
-### 命令行安装
+### 从 npm 安装（发布后可用）
+
+首次 npm 发布前，请使用 GitHub 方式安装。
+
+DSH 桌面端使用 `desktop` profile：
+
+```sh
+dsh plugin --profile desktop add dsh-settings-sidebar-organizer
+```
+
+使用命令行默认 profile：
+
+```sh
+dsh plugin add dsh-settings-sidebar-organizer
+```
+
+### 从 GitHub 安装
 
 DSH 桌面端使用 `desktop` profile：
 
@@ -35,7 +64,13 @@ dsh plugin add github:Six6stRINgs/dsh-settings-sidebar-organizer
 ### 在 DSH 插件页安装
 
 1. 打开 **插件 → 添加插件**。
-2. 填入 GitHub 包来源：
+2. npm 发布后，填入包名：
+
+   ```text
+   dsh-settings-sidebar-organizer
+   ```
+
+   首次发布前，或需要安装开发分支时，填入：
 
    ```text
    git+https://github.com/Six6stRINgs/dsh-settings-sidebar-organizer.git#main
@@ -66,6 +101,7 @@ dsh plugin add github:Six6stRINgs/dsh-settings-sidebar-organizer
 ## 兼容性与常见问题
 
 - 插件整理的是设置导航，不是应用的主侧栏。
+- 如果之前装过 `@local/dsh-settings-sidebar-organizer` 开发包，请先在 DSH 插件管理器中停用旧包，再启用正式包，不要同时启用两份。
 - 暂时不可用的入口保留原有分组归属，新入口会自动出现；入口 ID 改变则视为新入口。
 - 替换同一个设置组件或拦截全局拖拽事件的其他插件，可能与本插件冲突。
 - 如果 **整理侧栏** 提示导航结构不支持或接管失败，会尽可能保留原生导航。[反馈问题](https://github.com/Six6stRINgs/dsh-settings-sidebar-organizer/issues) 时，请附上状态提示和 DSH 版本。

@@ -1,1 +1,28 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect x="4" y="4" width="56" height="56" rx="14" fill="#173c48"/><g fill="none" stroke="#7cdae5" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 18h12m-12 0v28h12M36 18h12M36 32h12M36 46h12"/><path d="M16 32h12"/></g><circle cx="28" cy="18" r="3" fill="#eefbfc"/><circle cx="28" cy="32" r="3" fill="#eefbfc"/><circle cx="28" cy="46" r="3" fill="#eefbfc"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="dso-title">
+  <title id="dso-title">Settings sidebar organizer</title>
+  <defs>
+    <linearGradient id="dso-bg" x1="8" y1="4" x2="56" y2="62" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#26475e"/>
+      <stop offset="1" stop-color="#101e30"/>
+    </linearGradient>
+    <linearGradient id="dso-group" x1="29" y1="24" x2="52" y2="49" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#e3fff6"/>
+      <stop offset="1" stop-color="#76d8c5"/>
+    </linearGradient>
+  </defs>
+  <rect x="3.5" y="3.5" width="57" height="57" rx="16" fill="url(#dso-bg)" stroke="#a2e5e0" stroke-opacity=".22"/>
+  <rect x="12" y="13" width="40" height="38" rx="7" fill="#bcece6" fill-opacity=".05" stroke="#a7dedb" stroke-opacity=".28"/>
+  <path d="M25.5 14v36" stroke="#a7dedb" stroke-opacity=".22"/>
+  <rect x="15" y="17" width="8" height="30" rx="3" fill="#87e4d1" fill-opacity=".1"/>
+  <g stroke-linecap="round" stroke-width="2.5">
+    <path d="M18 22h2" stroke="#9bf0d9"/>
+    <path d="M18 30h2" stroke="#d3e9ee" stroke-opacity=".6"/>
+    <path d="M18 38h2" stroke="#d3e9ee" stroke-opacity=".4"/>
+    <path d="M30.5 19h15" stroke="#d3e9ee" stroke-opacity=".55"/>
+  </g>
+  <rect x="27" y="26" width="28" height="24" rx="6" fill="#071624" fill-opacity=".4"/>
+  <rect x="27" y="24" width="28" height="24" rx="6" fill="url(#dso-group)" stroke="#e4fff7" stroke-opacity=".55"/>
+  <path d="m31 30 2 2 2-2" fill="none" stroke="#21545b" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M39 31h10M37 37h12M37 42h9" stroke="#21545b" stroke-width="2" stroke-linecap="round"/>
+  <path d="M32.5 36v6" stroke="#4d9c91" stroke-width="1.5" stroke-linecap="round"/>
+</svg>

@@ -1,6 +1,19 @@
-# dsh-settings-sidebar-organizer
-
-**English** · [简体中文](https://github.com/Six6stRINgs/dsh-settings-sidebar-organizer/blob/main/README_zh.md)
+<div align="center">
+  <img src="./icon.svg" width="88" height="88" alt="Settings Sidebar Organizer logo" />
+  <h1>Settings Sidebar Organizer</h1>
+  <p><strong>English</strong> · <a href="./README_zh.md">简体中文</a></p>
+  <p>
+    <a href="https://github.com/awesome-dsh-plugin/awesome-dsh-plugin"><img src="https://awesome-dsh-plugin.com/badge.svg" alt="awesome · DSH plugin" /></a>
+    <a href="https://github.com/deepseek-ai/deepseek-harness"><img src="https://img.shields.io/badge/dsh-plugin-4B32C3" alt="dsh" /></a>
+    <a href="./LICENSE"><img src="https://img.shields.io/badge/license-MIT-green" alt="license" /></a>
+  </p>
+  <p>
+    <a href="https://www.npmjs.com/package/dsh-settings-sidebar-organizer"><img src="https://img.shields.io/npm/v/dsh-settings-sidebar-organizer?color=4a6cf7" alt="npm version" /></a>
+    <a href="https://www.npmjs.com/package/dsh-settings-sidebar-organizer"><img src="https://img.shields.io/npm/dt/dsh-settings-sidebar-organizer?color=4a6cf7" alt="npm downloads" /></a>
+    <a href="https://github.com/Six6stRINgs/dsh-settings-sidebar-organizer"><img src="https://img.shields.io/badge/repo-github-181717?logo=github" alt="repo" /></a>
+    <a href="https://github.com/Six6stRINgs/dsh-settings-sidebar-organizer/"><img src="https://img.shields.io/github/stars/Six6stRINgs/dsh-settings-sidebar-organizer?color=4a6cf7" alt="GitHub stars" /></a>
+  </p>
+</div>
 
 **Organize DSH's settings sidebar with drag-and-drop.** Put frequently used pages first, collect related entries into named groups, and keep your layout between sessions.
 
@@ -14,9 +27,25 @@
 
 ## Installation
 
-**Verified DSH version: `0.2.2-rc.1`.** Other versions have not been verified. The npm release is not available yet; install from GitHub using either method below.
+**Verified DSH version: `0.2.2-rc.1`.** Other versions have not been verified.
 
-### Command line
+### npm (after publication)
+
+Use the GitHub method until the first npm release is available.
+
+For DSH Desktop's `desktop` profile:
+
+```sh
+dsh plugin --profile desktop add dsh-settings-sidebar-organizer
+```
+
+For the default CLI profile:
+
+```sh
+dsh plugin add dsh-settings-sidebar-organizer
+```
+
+### GitHub
 
 For DSH Desktop's `desktop` profile:
 
@@ -35,7 +64,13 @@ If you use a different named profile, replace `desktop` with its name. These com
 ### DSH plugin page
 
 1. Open **Plugins → Add plugin**.
-2. Paste the GitHub package source:
+2. After the npm release is available, enter the package name:
+
+   ```text
+   dsh-settings-sidebar-organizer
+   ```
+
+   Before the first release, or to install the development branch, use:
 
    ```text
    git+https://github.com/Six6stRINgs/dsh-settings-sidebar-organizer.git#main
@@ -66,6 +101,7 @@ Changing DSH's language translates controls, not your group names or unsaved dra
 ## Compatibility and troubleshooting
 
 - This plugin changes the settings navigation, not the application's main sidebar.
+- If you previously installed an `@local/dsh-settings-sidebar-organizer` development bundle, disable that old bundle in DSH's plugin manager before enabling the public package. Do not enable both copies at once.
 - Temporarily unavailable entries keep their saved membership. New entries appear automatically; a changed entry ID is treated as a new entry.
 - Other plugins replacing the same settings component or intercepting global drag events may conflict.
 - If **Organize sidebar** reports unsupported navigation or an attachment failure, native navigation is retained where possible. Include that status and your DSH version when [reporting a problem](https://github.com/Six6stRINgs/dsh-settings-sidebar-organizer/issues).

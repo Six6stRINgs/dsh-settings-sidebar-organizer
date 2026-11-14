@@ -1,7 +1,6 @@
 {
-  "name": "@local/dsh-settings-sidebar-organizer",
+  "name": "dsh-settings-sidebar-organizer",
   "version": "0.1.0",
-  "private": true,
   "description": "User-organized two-level settings navigation for DSH Desktop.",
   "type": "module",
   "main": "lib/index.js",

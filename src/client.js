@@ -1,6 +1,6 @@
 /* Generated from this entry and dependency-free helper modules by build.mjs. */
 window.__ModuleLoader__.load({
-  id: '@local/dsh-settings-sidebar-organizer',
+  id: 'dsh-settings-sidebar-organizer',
   factory(require) {
     const React = require('react');
     const ReactDOM = require('react-dom');
