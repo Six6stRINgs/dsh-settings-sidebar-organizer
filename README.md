@@ -100,11 +100,10 @@ Changing DSH's language translates controls, not your group names or unsaved dra
 
 ## Compatibility and troubleshooting
 
-- This plugin changes the settings navigation, not the application's main sidebar.
-- If you previously installed an `@local/dsh-settings-sidebar-organizer` development bundle, disable that old bundle in DSH's plugin manager before enabling the public package. Do not enable both copies at once.
-- Temporarily unavailable entries keep their saved membership. New entries appear automatically; a changed entry ID is treated as a new entry.
-- Other plugins replacing the same settings component or intercepting global drag events may conflict.
-- If **Organize sidebar** reports unsupported navigation or an attachment failure, native navigation is retained where possible. Include that status and your DSH version when [reporting a problem](https://github.com/Six6stRINgs/dsh-settings-sidebar-organizer/issues).
+- **Supported version:** DSH `0.2.2-rc.1`; other versions have not been verified.
+- **Dragging does not respond:** check for conflicts with other sidebar or drag-enhancement plugins.
+- **Changes are not saved:** open **Organize sidebar** and check for read-only or save-error messages.
+- **Need help?** [Open an issue](https://github.com/Six6stRINgs/dsh-settings-sidebar-organizer/issues) with your DSH version, the status message, and steps to reproduce the problem.
 
 ## How it works
 

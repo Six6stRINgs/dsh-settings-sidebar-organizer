@@ -100,11 +100,10 @@ dsh plugin add github:Six6stRINgs/dsh-settings-sidebar-organizer
 
 ## 兼容性与常见问题
 
-- 插件整理的是设置导航，不是应用的主侧栏。
-- 如果之前装过 `@local/dsh-settings-sidebar-organizer` 开发包，请先在 DSH 插件管理器中停用旧包，再启用正式包，不要同时启用两份。
-- 暂时不可用的入口保留原有分组归属，新入口会自动出现；入口 ID 改变则视为新入口。
-- 替换同一个设置组件或拦截全局拖拽事件的其他插件，可能与本插件冲突。
-- 如果 **整理侧栏** 提示导航结构不支持或接管失败，会尽可能保留原生导航。[反馈问题](https://github.com/Six6stRINgs/dsh-settings-sidebar-organizer/issues) 时，请附上状态提示和 DSH 版本。
+- **适用版本：** DSH `0.2.2-rc.1`，其他版本尚未验证。
+- **拖拽没有反应：** 检查是否与其他侧栏或拖拽增强插件冲突。
+- **修改没有保存：** 打开 **整理侧栏**，查看是否提示只读或保存失败。
+- **需要帮助：** [提交问题](https://github.com/Six6stRINgs/dsh-settings-sidebar-organizer/issues) 时，请附上 DSH 版本、状态提示和复现步骤。
 
 ## 简单原理
 
