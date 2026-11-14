@@ -10,7 +10,7 @@
 - **Save your layout:** order, group membership, names, and expanded state are stored through DSH's settings.
 - **Follow DSH's appearance:** theme-aware controls and Chinese/English UI that follows the application language.
 
-![Dragging, grouping, and editing settings entries](https://raw.githubusercontent.com/Six6stRINgs/dsh-settings-sidebar-organizer/main/assets/showcase.gif)
+![Dragging, grouping, and editing settings entries](./assets/showcase.gif)
 
 ## Installation
 

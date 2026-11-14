@@ -10,7 +10,7 @@
 - **保存自己的布局：** 顺序、分组归属、名称和展开状态通过 DSH 设置保存。
 - **跟随 DSH 外观：** 控件适配主题，中英文界面跟随应用语言设置。
 
-![拖拽排序、分组与编辑演示](https://raw.githubusercontent.com/Six6stRINgs/dsh-settings-sidebar-organizer/main/assets/showcase.gif)
+![拖拽排序、分组与编辑演示](./assets/showcase.gif)
 
 ## 安装
 
