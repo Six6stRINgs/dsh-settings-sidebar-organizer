@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./icon.svg" width="88" height="88" alt="Settings Sidebar Organizer logo" />
+  <img src="./assets/icon.svg" width="88" height="88" alt="Settings Sidebar Organizer logo" />
   <h1>Settings Sidebar Organizer</h1>
   <p><strong>English</strong> · <a href="./README_zh.md">简体中文</a></p>
   <p>
@@ -29,9 +29,7 @@
 
 **Verified DSH version: `0.2.2-rc.1`.** Other versions have not been verified.
 
-### npm (after publication)
-
-Use the GitHub method until the first npm release is available.
+### npm
 
 For DSH Desktop's `desktop` profile:
 
@@ -103,7 +101,7 @@ npm run check
 lib/      Installable Host entry and generated Client bundle
 src/      Internal source modules and build script
 test/     Automated tests
-assets/   Showcase GIF
+assets/   Logo and showcase GIF
 locale/   Plugin display translations
 ```
 

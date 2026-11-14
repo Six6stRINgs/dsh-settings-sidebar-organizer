@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./icon.svg" width="88" height="88" alt="设置侧栏整理器标志" />
+  <img src="./assets/icon.svg" width="88" height="88" alt="设置侧栏整理器标志" />
   <h1>设置侧栏整理器</h1>
   <p><a href="./README.md">English</a> · <strong>简体中文</strong></p>
   <p>
@@ -29,9 +29,7 @@
 
 **已验证的 DSH 版本：`0.2.2-rc.1`。** 其他版本尚未验证。
 
-### 从 npm 安装（发布后可用）
-
-首次 npm 发布前，请使用 GitHub 方式安装。
+### 从 npm 安装
 
 DSH 桌面端使用 `desktop` profile：
 
@@ -104,7 +102,7 @@ npm run check
 lib/      可安装的 Host 入口与构建好的 Client
 src/      内部源码模块和构建脚本
 test/     自动化测试
-assets/   演示 GIF
+assets/   Logo 与演示 GIF
 locale/   插件展示信息的翻译
 ```
 
