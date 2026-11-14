@@ -61,24 +61,6 @@ dsh plugin add github:Six6stRINgs/dsh-settings-sidebar-organizer
 
 如果你使用其他命名的 profile，将 `desktop` 换成实际名称。这些命令会将插件包注册到 DSH；单独执行普通的 `npm install` 不能替代插件安装。
 
-### 在 DSH 插件页安装
-
-1. 打开 **插件 → 添加插件**。
-2. npm 发布后，填入包名：
-
-   ```text
-   dsh-settings-sidebar-organizer
-   ```
-
-   首次发布前，或需要安装开发分支时，填入：
-
-   ```text
-   git+https://github.com/Six6stRINgs/dsh-settings-sidebar-organizer.git#main
-   ```
-
-3. 安装并启用后，打开 **设置**。如果界面尚未显示新增控件，刷新窗口（`Ctrl+R`）即可重新加载界面。
-
-仓库已包含构建好的运行代码，正常安装不需要手动编译源码。
 
 ## 使用方法
 

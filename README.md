@@ -61,25 +61,6 @@ dsh plugin add github:Six6stRINgs/dsh-settings-sidebar-organizer
 
 If you use a different named profile, replace `desktop` with its name. These commands register the bundle with DSH; a plain `npm install` is not a substitute.
 
-### DSH plugin page
-
-1. Open **Plugins → Add plugin**.
-2. After the npm release is available, enter the package name:
-
-   ```text
-   dsh-settings-sidebar-organizer
-   ```
-
-   Before the first release, or to install the development branch, use:
-
-   ```text
-   git+https://github.com/Six6stRINgs/dsh-settings-sidebar-organizer.git#main
-   ```
-
-3. Install and enable it, then open **Settings**. If the interface has not picked up the controls, refresh the window (`Ctrl+R`).
-
-The repository includes its built runtime, so you do not need to build the source manually for normal installation.
-
 ## Usage
 
 | Goal | Action |
